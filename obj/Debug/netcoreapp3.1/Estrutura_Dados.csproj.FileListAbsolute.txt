@@ -1,0 +1,13 @@
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\bin\Debug\netcoreapp3.1\Estrutura_Dados.exe
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\bin\Debug\netcoreapp3.1\Estrutura_Dados.deps.json
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\bin\Debug\netcoreapp3.1\Estrutura_Dados.runtimeconfig.json
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\bin\Debug\netcoreapp3.1\Estrutura_Dados.runtimeconfig.dev.json
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\bin\Debug\netcoreapp3.1\Estrutura_Dados.dll
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\bin\Debug\netcoreapp3.1\Estrutura_Dados.pdb
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\obj\Debug\netcoreapp3.1\Estrutura_Dados.AssemblyInfoInputs.cache
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\obj\Debug\netcoreapp3.1\Estrutura_Dados.AssemblyInfo.cs
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\obj\Debug\netcoreapp3.1\Estrutura_Dados.csproj.CoreCompileInputs.cache
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\obj\Debug\netcoreapp3.1\Estrutura_Dados.dll
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\obj\Debug\netcoreapp3.1\Estrutura_Dados.pdb
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\obj\Debug\netcoreapp3.1\Estrutura_Dados.genruntimeconfig.cache
+C:\Estudos\DOTNET\Estrutura_Dados\Estrutura_Dados\obj\Debug\netcoreapp3.1\Estrutura_Dados.csproj.AssemblyReference.cache
