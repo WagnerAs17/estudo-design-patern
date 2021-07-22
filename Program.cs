@@ -1,7 +1,9 @@
 ﻿using Estrutura_Dados.Comportamentais;
 using Estrutura_Dados.Comportamentais.Exemplo___02;
 using Estrutura_Dados.Comportamentais.Mediator;
+using Estrutura_Dados.Comportamentais.Mediator.Exemplo___02;
 using Estrutura_Dados.Comportamentais.Observer.Exemplo___01;
+using Estrutura_Dados.Comportamentais.State.Exemplo___01;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +15,43 @@ namespace Estrutura_Dados
     {
         static void Main(string[] args)
         {
-            Mediator();
+            State();
 
             Console.ReadKey();
+        }
+
+        static void State()
+        {
+            var designPatterStudy = new Document();
+
+            designPatterStudy.Render();
+
+            designPatterStudy.Publish();
+
+            designPatterStudy.Render();
+
+            designPatterStudy.Publish();
+
+            designPatterStudy.Publish();
+        }
+
+        static void Mediator2()
+        {
+            var torreComando = new TorreComando();
+
+            var aviao = new Aviao(torreComando);
+
+            var aviao2 = new Aviao(torreComando);
+
+            var helicoptero = new Helicoptero(torreComando);
+
+            aviao.Decolar();
+
+            if (helicoptero.Decolar())
+            {
+                aviao2.Decolar();
+            }
+
         }
 
         public static void Mediator()
