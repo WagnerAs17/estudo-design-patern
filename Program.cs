@@ -4,6 +4,8 @@ using Estrutura_Dados.Comportamentais.Mediator;
 using Estrutura_Dados.Comportamentais.Mediator.Exemplo___02;
 using Estrutura_Dados.Comportamentais.Observer.Exemplo___01;
 using Estrutura_Dados.Comportamentais.State.Exemplo___01;
+using Estrutura_Dados.Estruturais;
+using Estrutura_Dados.Estruturais._02___Proxy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +17,49 @@ namespace Estrutura_Dados
     {
         static void Main(string[] args)
         {
-            State();
-
+            Proxy();
+          
             Console.ReadKey();
+        }
+
+        static void Proxy()
+        {
+            var proxy = new ThirdPartyYouTubeClassProxy();
+
+            var client = new YouTubeManager(proxy);
+
+            var videos = client.IYouTubeManager.ListVideos();
+
+            foreach (var video in videos)
+            {
+                Console.WriteLine(video);
+            }
+        }
+
+
+        static void Adapter()
+        {
+            var stringXml = @"<?xml version='1.0' standalone='no'?>
+                            <root>
+                              <person id='1'>
+                              <name>Alan</name>
+                              <url>http://www.google.com</url>
+                              </person>
+                              <person id='2'>
+                              <name>Louis</name>
+                              <url>http://www.yahoo.com</url>
+                              </person>
+                            </root>";
+
+            var json = new Json();
+
+            var adapter = new JsonAdapter(json);
+
+            var xml = new Client(adapter);
+
+            var stringJson = xml.Criar(stringXml);
+
+            Console.WriteLine(stringJson);
         }
 
         static void State()
@@ -115,7 +157,7 @@ namespace Estrutura_Dados
             var irpf = new IRPF();
             var ipi = new IPI();
             var fins = new FINS();
-            
+
 
             imposto.setNext(irpf);
             irpf.setNext(ipi);

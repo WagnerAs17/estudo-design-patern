@@ -9,4 +9,8 @@
     <None Remove="Program.cs~RF5b18212.TMP" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
 </Project>
