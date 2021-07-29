@@ -4,8 +4,10 @@ using Estrutura_Dados.Comportamentais.Mediator;
 using Estrutura_Dados.Comportamentais.Mediator.Exemplo___02;
 using Estrutura_Dados.Comportamentais.Observer.Exemplo___01;
 using Estrutura_Dados.Comportamentais.State.Exemplo___01;
+using Estrutura_Dados.Criacionais._01___Builder;
 using Estrutura_Dados.Estruturais;
 using Estrutura_Dados.Estruturais._02___Proxy;
+using Estrutura_Dados.Estruturais._03___Decorator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +19,26 @@ namespace Estrutura_Dados
     {
         static void Main(string[] args)
         {
-            Proxy();
-          
             Console.ReadKey();
+        }
+
+        static void Builder()
+        {
+            var director = new Director();
+
+            var woodHouse = director.MakeWoodHouse(new WoodHouseBuilder());
+
+            var brickHouse = director.MakeBrickHouse(new BrickHouseBuilder());
+
+            Console.WriteLine($"{brickHouse} \n--------------------------------------------------\n {woodHouse}");
+        }
+
+        static void Decorator()
+        {
+            var fileDataSource = new FileDataSource("encrypt");
+            var encryptDecorator = new EncryptDecorator(fileDataSource);
+            var client = new ClientDecorator(encryptDecorator);
+            client.DataSource.WriteData("");
         }
 
         static void Proxy()
